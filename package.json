@@ -1,0 +1,26 @@
+{
+  "name": "adventofcode2024",
+  "version": "1.0.0",
+  "description": "parent package of AdventOfCode2024",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kayhuba/AdventOfCode2024.git"
+  },
+  "keywords": [
+    "adventofcode2024",
+    "aoc2024",
+    "2024"
+  ],
+  "author": "Kay Huber",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/kayhuba/AdventOfCode2024/issues"
+  },
+  "homepage": "https://github.com/kayhuba/AdventOfCode2024#readme",
+  "devDependencies": {
+    "@types/mocha": "^10.0.10",
+    "@types/node": "^22.10.1",
+    "mocha": "^10.8.2",
+    "typescript": "^5.7.2"
+  }
+}
