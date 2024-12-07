@@ -25,10 +25,8 @@ lineReader.eachLine("./input/input.txt", (line, last) => {
         const operatorCount = parameters.length - 1;
         const combinations = Math.pow(operators.length, operatorCount);
         for (let i=0; i < combinations; i++) {
-            // console.log(`Combination ${i}`);
             const result = parameters.slice(1).reduce((acc, parameter, index) => {
                 const operatorIndex = Math.floor(i / Math.pow(operators.length,operatorCount - index - 1)) % operators.length;
-                // console.log(`operatorIndex ${operatorIndex}`);
                 return operators[operatorIndex].evaluate(acc, parameter);
             }, parameters[0]);
 
