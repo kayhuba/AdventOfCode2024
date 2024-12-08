@@ -1,7 +1,7 @@
 {
-  "name": "aoc2024_day01",
+  "name": "aoc2024_day05",
   "version": "1.0.0",
-  "description": "Advent Of Code 2024 Day 01",
+  "description": "Advent Of Code 2024 Day 05",
   "main": "index.js",
   "scripts": {
     "puzzle01": "tsc && node build/puzzle01.js",
