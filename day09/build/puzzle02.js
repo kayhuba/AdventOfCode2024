@@ -5,6 +5,8 @@ var __importDefault = (this && this.__importDefault) || function (mod) {
 Object.defineProperty(exports, "__esModule", { value: true });
 console.log("Day 09, Puzzle 02!");
 const line_reader_1 = __importDefault(require("line-reader"));
+const timer = "Execution time";
+console.time(timer);
 line_reader_1.default.eachLine("./input/input.txt", (line, last) => {
     if (line.length > 0) {
         const blocks = line.split("").map((char) => parseInt(char));
@@ -85,6 +87,7 @@ line_reader_1.default.eachLine("./input/input.txt", (line, last) => {
             checksum += fileSystem[i] * i;
         }
         console.log(`Checksum: ${checksum}`);
+        console.timeEnd(timer);
     }
 });
 //# sourceMappingURL=puzzle02.js.map

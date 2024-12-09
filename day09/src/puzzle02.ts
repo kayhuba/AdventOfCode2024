@@ -7,6 +7,8 @@ interface GapDescription {
     index: number;
 }
 
+const timer = "Execution time";
+console.time(timer);
 lineReader.eachLine("./input/input.txt", (line, last) => {
     if (line.length  > 0) {
         const blocks = line.split("").map((char) => parseInt(char));
@@ -101,5 +103,6 @@ lineReader.eachLine("./input/input.txt", (line, last) => {
         }
 
         console.log(`Checksum: ${checksum}`);
+        console.timeEnd(timer);
     }
 });
